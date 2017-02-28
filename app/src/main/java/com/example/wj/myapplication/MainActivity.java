@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showTips(View view){
 
-        Toast.makeText(this, "这是一个代码提示,加上我的修改,优点神奇", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "这是一个代码提示,加上我的修改,优点神奇,是啥呢", Toast.LENGTH_SHORT).show();
 
 
 
