@@ -17,11 +17,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
     public void showTips(View view){
 
-        Toast.makeText(this, "这是一个代码提示,加上我的修改", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "这是一个代码提示,加上我的修改,优点神奇", Toast.LENGTH_SHORT).show();
 
+
+
+        
+       
 
     }
     public void showError(View view) throws  Exception{
