@@ -2,6 +2,7 @@ package com.example.wj.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void test(){
-      
-      
-        
+
+
+        Toast.makeText(this, "aaaa", Toast.LENGTH_SHORT).show();
         
     }
 }
