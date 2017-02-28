@@ -49,9 +49,22 @@ android {
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                        // 输出apk名称为zejian_v1.0_2015-01-15_wandoujia.apk
-                        def fileName = "wangjie_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
-                        output.outputFile = new File(outputFile.parent, fileName)
+
+                     if("true".equals(IS_JENKINS)){
+
+                         def fileName = "${APP_VERSION}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                         output.outputFile = new File(outputFile.parent, fileName)
+
+
+
+                     }else {
+
+                         // 输出apk名称为zejian_v1.0_2015-01-15_wandoujia.apk
+                         def fileName = "wangjie_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                         output.outputFile = new File(outputFile.parent, fileName)
+
+                     }
+
                     }
                 }
             }
